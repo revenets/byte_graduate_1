@@ -505,7 +505,7 @@ button {
 }
 
 .spaces__mosaic-item-text-title {
-  margin-top: 129px;
+  margin-top: 45%;
   text-align: center;
   font-family: Lora;
   font-weight: 400;
@@ -555,6 +555,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -587,6 +590,11 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.spaces__mosaic-item-button-arrow-img {
+  cursor: pointer;
+  padding: 0 30px;
 }
 
 .active-arrow {
@@ -1780,8 +1788,8 @@ button {
   }
 
   .facilities__content-ul-item:hover {
-    background-color: transparent;
-    color: #000;
+    color: #fff;
+    background-color: #ff5722;
   }
 
   .active {
@@ -1809,6 +1817,10 @@ button {
     margin: 0 auto;
   }
 
+  .modal__window {
+    width: 90%;
+  }
+
   .footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1828,6 +1840,28 @@ button {
 
   .intro {
     margin-top: 110px;
+  }
+
+  .spaces__mosaic-item-image-img {
+    height: auto;
+  }
+
+  .spaces__mosaic-item-image-img:last-child {
+    height: auto;
+  }
+
+  .slick-arrow {
+    display: none;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
   }
 
   .facilities__content-ul {
@@ -1873,18 +1907,22 @@ button {
     grid-row: span 2;
   }
 
-  .modal__window {
-    max-width: 400px;
-  }
-
   .modal__title {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
     max-width: 320px;
+  }
+
+  .intro__block-title {
+    font-size: 38px;
+  }
+
+  .intro__form-title {
+    font-size: 24px;
   }
 
   .spaces__title {
@@ -1920,16 +1958,54 @@ button {
     width: 100%;
     margin-bottom: 10px;
   }
+
+  .member__btn {
+    padding: 12px 0;
+    width: 90%;
+  }
 }
 
 @media (max-width: 370px) {
-  .slick-prev,
-  .slick-next {
-    display: none;
+  .container {
+    max-width: 280px;
+  }
+
+  .intro__form {
+    padding: 0px 15px;
+  }
+
+  .intro__form-title {
+    font-size: 20px;
+  }
+
+  .spaces__mosaic-item-text-title {
+    margin-top: 40%;
+    font-size: 26px;
+  }
+
+  .spaces__mosaic-item-text-body {
+    font-size: 16px;
+    max-width: 180px;
+  }
+
+  .spaces__mosaic-item-text-image-img {
+    width: 80%;
+  }
+
+  .spaces__mosaic-item-button-link {
+    margin-left: 30px;
+  }
+
+  .spaces__mosaic-item-button-arrow-img {
+    padding: 25px 30px;
   }
 
   .slick-dots {
     position: absolute;
     top: 20px;
+  }
+
+  .facilities__content-ul {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

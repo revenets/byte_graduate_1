@@ -47,11 +47,11 @@ $('#send_btn').on('click', function(e){
         },
         // при успешной отправке делаем такие действия
         success: function(){
-            alert('Success!')
+            alert('Success!');
             $('#email').val('');
             $('#name').val('');
             $('#phone').val('');
-            $('#send_btn').prop('disabled', false)
+            $('#send_btn').prop('disabled', false);
         }
     })
 });
@@ -183,7 +183,7 @@ if (mainMenuLinks.length > 0) {
 
 $(".header__nav-button-login").on("click", function () {
     $(".modal").fadeIn();
-    $("body").addClass("no-scroll");
+    $(".mobile-nav").removeClass("is-active");
 });
 
 const hamMenuLinks = document.querySelectorAll(".mobile-nav__link[data-togo]");

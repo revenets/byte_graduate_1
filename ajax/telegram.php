@@ -7,7 +7,7 @@ $chat_id = "-757158961";
 $arr = array(
   'Name: ' => $name,
   'Telephone: ' => $phone,
-  'Email: ' => $email,
+  'Email: ' => $email
 );
 
 foreach($arr as $key => $value) {
